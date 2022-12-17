@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<div class="text-center">
+    
+
+    <div style="margin:50px;">
+        <h1 class="body_title">RH MANAGER</h1>
+    </div>
+
+    <form action="Home/ReadFiles" method="POST">
+        <div class="card">
+            <div class="card-body">
+                <div style="width:500px; margin:auto;" class="form-group">
+                    <label class="control-label body_text">Insira o caminho da pasta que deve ser lida</label>
+                    <input name="pasta" id="pasta" class="form-control" placeholder="D:/Caminho" style="background:#bfbfbf" />
+                </div>
+                <p id="erroMessage" style="color:red">@ViewBag.ErrorMessage</p>
+
+                <div class="form-group">
+                    <button class="btn-primary" type="submit"
+                            style="font-family: 'Montserrat';
+                                    border-radius:10px; margin:20px;
+                                    height:50px; width:100px" 
+                            onclick="ErrorAlterar()">
+                        Converter</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <br />
+    <br />
+
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title table_title" style="margin-right:700px">Informações :</h1>
+            <br />
+
+            <table>
+                <tr>
+                    <th>
+                        <label class="table_text" >
+                            Vinicius Augusto Rios da Rocha</label>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label class="table_text">
+                            Programador Junior/Pleno</label>
+                    </th>
+                </tr>
+                    
+                <tr>
+                    <th>
+                        <label class="table_text">
+                            Pretenção salarial mínima: R$3.500,00
+                        </label>
+                    </th>
+                </tr>
+                    
+                <tr>
+                    <th>
+                        <label class="table_text">
+                            Data de término do teste: 17/12/2022
+                        </label>
+                    </th>
+                </tr>
+            
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+
+    function ErrorAlterar(){
+        var erroP = $('#erroMessage');
+        console.log()
+        if (erroP.contents()[0] != null){
+            $('#erroMessage').hide()
+        }
+
+    }
+
+</script>
+
+<style>
+
+    .body_title{
+        font-family: 'Montserrat'; 
+        font-size:40px;
+    }
+    .body_text{
+        font-family: 'Montserrat'; 
+        font-size:16px;
+    }
+
+    .table_title{
+        font-family: 'Montserrat'; 
+        font-size:35px;
+    }
+    .table_text{
+        font-family: 'Montserrat'; 
+        font-size:23px; 
+        float:left;
+    }
+</style>
+

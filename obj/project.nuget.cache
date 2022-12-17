@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "TgMYQIwMmt1WeYZWdB7ecKkGIjeajFQrBP2kEBQGcO39DALM5BeI0zVQDZC2pkI3ci97vSE/KpPA32xEb9eDtA==",
+  "success": true,
+  "projectFilePath": "D:\\Projetos\\RHManager\\RHManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vinicius Rios\\.nuget\\packages\\bootstrap\\5.2.3\\bootstrap.5.2.3.nupkg.sha512",
+    "C:\\Users\\Vinicius Rios\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\Vinicius Rios\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Vinicius Rios\\.nuget\\packages\\tinycsvparser\\2.7.0\\tinycsvparser.2.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
